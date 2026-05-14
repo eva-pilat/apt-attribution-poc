@@ -1,0 +1,6590 @@
+{
+  "G0119": {
+    "group_id": "G0119",
+    "name": "Indrik Spider",
+    "aliases": [
+      "Indrik Spider",
+      "Evil Corp",
+      "Manatee Tempest",
+      "DEV-0243",
+      "UNC2165"
+    ],
+    "uac_designation": null,
+    "affiliation": "Cybercrime/FSB ties",
+    "country": "Russia",
+    "target_sectors": [
+      "finance",
+      "healthcare",
+      "retail"
+    ],
+    "target_countries": [
+      "USA",
+      "EU"
+    ],
+    "primary_intent": "financial",
+    "technique_count": 33,
+    "techniques": {
+      "T1003.001": {
+        "name": "LSASS Memory",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1007": {
+        "name": "System Service Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1012": {
+        "name": "Query Registry",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1018": {
+        "name": "Remote System Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021.001": {
+        "name": "Remote Desktop Protocol",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.004": {
+        "name": "SSH",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1047": {
+        "name": "Windows Management Instrumentation",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.007": {
+        "name": "JavaScript",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1070.001": {
+        "name": "Clear Windows Event Logs",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1074.001": {
+        "name": "Local Data Staging",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1078": {
+        "name": "Valid Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1078.002": {
+        "name": "Domain Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1112": {
+        "name": "Modify Registry",
+        "tactics": [
+          "defense-evasion",
+          "persistence"
+        ]
+      },
+      "T1136": {
+        "name": "Create Account",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1136.001": {
+        "name": "Local Account",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1204.002": {
+        "name": "Malicious File",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1484.001": {
+        "name": "Group Policy Modification",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1486": {
+        "name": "Data Encrypted for Impact",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1489": {
+        "name": "Service Stop",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1552.001": {
+        "name": "Credentials In Files",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1555.005": {
+        "name": "Password Managers",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1558.003": {
+        "name": "Kerberoasting",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1562.001": {
+        "name": "Disable or Modify Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1567.002": {
+        "name": "Exfiltration to Cloud Storage",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1583": {
+        "name": "Acquire Infrastructure",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.004": {
+        "name": "Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585.002": {
+        "name": "Email Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.001": {
+        "name": "Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1590": {
+        "name": "Gather Victim Network Information",
+        "tactics": [
+          "reconnaissance"
+        ]
+      }
+    },
+    "software_count": 8,
+    "software": [
+      {
+        "id": "S0695",
+        "name": "Donut",
+        "type": "tool"
+      },
+      {
+        "id": "S0002",
+        "name": "Mimikatz",
+        "type": "tool"
+      },
+      {
+        "id": "S0363",
+        "name": "Empire",
+        "type": "tool"
+      },
+      {
+        "id": "S0029",
+        "name": "PsExec",
+        "type": "tool"
+      },
+      {
+        "id": "S0384",
+        "name": "Dridex",
+        "type": "malware"
+      },
+      {
+        "id": "S0612",
+        "name": "WastedLocker",
+        "type": "malware"
+      },
+      {
+        "id": "S0570",
+        "name": "BitPaymer",
+        "type": "malware"
+      },
+      {
+        "id": "S0154",
+        "name": "Cobalt Strike",
+        "type": "malware"
+      }
+    ]
+  },
+  "G0035": {
+    "group_id": "G0035",
+    "name": "Dragonfly",
+    "aliases": [
+      "Dragonfly",
+      "TEMP.Isotope",
+      "DYMALLOY",
+      "Berserk Bear",
+      "TG-4192",
+      "Crouching Yeti",
+      "IRON LIBERTY",
+      "Energetic Bear",
+      "Ghost Blizzard",
+      "BROMINE"
+    ],
+    "uac_designation": null,
+    "affiliation": "FSB/GRU",
+    "country": "Russia",
+    "target_sectors": [
+      "energy",
+      "industrial",
+      "government"
+    ],
+    "target_countries": [
+      "USA",
+      "EU",
+      "Turkey"
+    ],
+    "primary_intent": "espionage",
+    "technique_count": 56,
+    "techniques": {
+      "T1003.002": {
+        "name": "Security Account Manager",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.003": {
+        "name": "NTDS",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.004": {
+        "name": "LSA Secrets",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1012": {
+        "name": "Query Registry",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1016": {
+        "name": "System Network Configuration Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1018": {
+        "name": "Remote System Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021.001": {
+        "name": "Remote Desktop Protocol",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1033": {
+        "name": "System Owner/User Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1036.010": {
+        "name": "Masquerade Account Name",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1059": {
+        "name": "Command and Scripting Interpreter",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.006": {
+        "name": "Python",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1069.002": {
+        "name": "Domain Groups",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1070.001": {
+        "name": "Clear Windows Event Logs",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1071.002": {
+        "name": "File Transfer Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1074.001": {
+        "name": "Local Data Staging",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1078": {
+        "name": "Valid Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.002": {
+        "name": "Domain Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1098.007": {
+        "name": "Additional Local or Domain Groups",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1110": {
+        "name": "Brute Force",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1110.002": {
+        "name": "Password Cracking",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1112": {
+        "name": "Modify Registry",
+        "tactics": [
+          "defense-evasion",
+          "persistence"
+        ]
+      },
+      "T1113": {
+        "name": "Screen Capture",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1114.002": {
+        "name": "Remote Email Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1133": {
+        "name": "External Remote Services",
+        "tactics": [
+          "persistence",
+          "initial-access"
+        ]
+      },
+      "T1135": {
+        "name": "Network Share Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1136.001": {
+        "name": "Local Account",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1187": {
+        "name": "Forced Authentication",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1189": {
+        "name": "Drive-by Compromise",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1190": {
+        "name": "Exploit Public-Facing Application",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1195.002": {
+        "name": "Compromise Software Supply Chain",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1203": {
+        "name": "Exploitation for Client Execution",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.002": {
+        "name": "Malicious File",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1210": {
+        "name": "Exploitation of Remote Services",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1221": {
+        "name": "Template Injection",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1505.003": {
+        "name": "Web Shell",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1547.001": {
+        "name": "Registry Run Keys / Startup Folder",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1560": {
+        "name": "Archive Collected Data",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1562.004": {
+        "name": "Disable or Modify System Firewall",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1564.002": {
+        "name": "Hidden Users",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1566.001": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1583.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.003": {
+        "name": "Virtual Private Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.004": {
+        "name": "Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1591.002": {
+        "name": "Business Relationships",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1595.002": {
+        "name": "Vulnerability Scanning",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1598.002": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1598.003": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1608.004": {
+        "name": "Drive-by Target",
+        "tactics": [
+          "resource-development"
+        ]
+      }
+    },
+    "software_count": 10,
+    "software": [
+      {
+        "id": "S0500",
+        "name": "MCMD",
+        "type": "tool"
+      },
+      {
+        "id": "S0039",
+        "name": "Net",
+        "type": "tool"
+      },
+      {
+        "id": "S0357",
+        "name": "Impacket",
+        "type": "tool"
+      },
+      {
+        "id": "S0488",
+        "name": "CrackMapExec",
+        "type": "tool"
+      },
+      {
+        "id": "S0075",
+        "name": "Reg",
+        "type": "tool"
+      },
+      {
+        "id": "S0002",
+        "name": "Mimikatz",
+        "type": "tool"
+      },
+      {
+        "id": "S0029",
+        "name": "PsExec",
+        "type": "tool"
+      },
+      {
+        "id": "S0108",
+        "name": "netsh",
+        "type": "tool"
+      },
+      {
+        "id": "S0093",
+        "name": "Backdoor.Oldrea",
+        "type": "malware"
+      },
+      {
+        "id": "S0094",
+        "name": "Trojan.Karagany",
+        "type": "malware"
+      }
+    ]
+  },
+  "G0032": {
+    "group_id": "G0032",
+    "name": "Lazarus Group",
+    "aliases": [
+      "Lazarus Group",
+      "Labyrinth Chollima",
+      "HIDDEN COBRA",
+      "Guardians of Peace",
+      "ZINC",
+      "NICKEL ACADEMY",
+      "Diamond Sleet"
+    ],
+    "uac_designation": null,
+    "affiliation": "RGB",
+    "country": "North Korea",
+    "target_sectors": [
+      "finance",
+      "defense",
+      "technology",
+      "entertainment"
+    ],
+    "target_countries": [
+      "USA",
+      "South_Korea",
+      "global"
+    ],
+    "primary_intent": "financial",
+    "technique_count": 119,
+    "techniques": {
+      "T1001.003": {
+        "name": "Protocol or Service Impersonation",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1008": {
+        "name": "Fallback Channels",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1010": {
+        "name": "Application Window Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1012": {
+        "name": "Query Registry",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1016": {
+        "name": "System Network Configuration Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021.001": {
+        "name": "Remote Desktop Protocol",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.002": {
+        "name": "SMB/Windows Admin Shares",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.004": {
+        "name": "SSH",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1027.002": {
+        "name": "Software Packing",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.007": {
+        "name": "Dynamic API Resolution",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.009": {
+        "name": "Embedded Payloads",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.013": {
+        "name": "Encrypted/Encoded File",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1033": {
+        "name": "System Owner/User Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1036.003": {
+        "name": "Rename Legitimate Utilities",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.004": {
+        "name": "Masquerade Task or Service",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.008": {
+        "name": "Masquerade File Type",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1041": {
+        "name": "Exfiltration Over C2 Channel",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1046": {
+        "name": "Network Service Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1047": {
+        "name": "Windows Management Instrumentation",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1048.003": {
+        "name": "Exfiltration Over Unencrypted Non-C2 Protocol",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1049": {
+        "name": "System Network Connections Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1055.001": {
+        "name": "Dynamic-link Library Injection",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1056.001": {
+        "name": "Keylogging",
+        "tactics": [
+          "collection",
+          "credential-access"
+        ]
+      },
+      "T1057": {
+        "name": "Process Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.005": {
+        "name": "Visual Basic",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1070": {
+        "name": "Indicator Removal",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.003": {
+        "name": "Clear Command History",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.006": {
+        "name": "Timestomp",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1071.001": {
+        "name": "Web Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1074.001": {
+        "name": "Local Data Staging",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1078": {
+        "name": "Valid Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1082": {
+        "name": "System Information Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.002": {
+        "name": "Domain Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1090.001": {
+        "name": "Internal Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1090.002": {
+        "name": "External Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1098": {
+        "name": "Account Manipulation",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1102.002": {
+        "name": "Bidirectional Communication",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1104": {
+        "name": "Multi-Stage Channels",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1106": {
+        "name": "Native API",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1110": {
+        "name": "Brute Force",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1110.003": {
+        "name": "Password Spraying",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1124": {
+        "name": "System Time Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1132.001": {
+        "name": "Standard Encoding",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1134.002": {
+        "name": "Create Process with Token",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1140": {
+        "name": "Deobfuscate/Decode Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1189": {
+        "name": "Drive-by Compromise",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1202": {
+        "name": "Indirect Command Execution",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1203": {
+        "name": "Exploitation for Client Execution",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.001": {
+        "name": "Malicious Link",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.002": {
+        "name": "Malicious File",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1218": {
+        "name": "System Binary Proxy Execution",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1218.005": {
+        "name": "Mshta",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1218.010": {
+        "name": "Regsvr32",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1218.011": {
+        "name": "Rundll32",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1220": {
+        "name": "XSL Script Processing",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1221": {
+        "name": "Template Injection",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1485": {
+        "name": "Data Destruction",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1489": {
+        "name": "Service Stop",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1491.001": {
+        "name": "Internal Defacement",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1497.001": {
+        "name": "System Checks",
+        "tactics": [
+          "defense-evasion",
+          "discovery"
+        ]
+      },
+      "T1497.003": {
+        "name": "Time Based Checks",
+        "tactics": [
+          "defense-evasion",
+          "discovery"
+        ]
+      },
+      "T1505.004": {
+        "name": "IIS Components",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1529": {
+        "name": "System Shutdown/Reboot",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1534": {
+        "name": "Internal Spearphishing",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1542.003": {
+        "name": "Bootkit",
+        "tactics": [
+          "persistence",
+          "defense-evasion"
+        ]
+      },
+      "T1543.003": {
+        "name": "Windows Service",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1547.001": {
+        "name": "Registry Run Keys / Startup Folder",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1547.009": {
+        "name": "Shortcut Modification",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1553.002": {
+        "name": "Code Signing",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1557.001": {
+        "name": "LLMNR/NBT-NS Poisoning and SMB Relay",
+        "tactics": [
+          "credential-access",
+          "collection"
+        ]
+      },
+      "T1560": {
+        "name": "Archive Collected Data",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1560.001": {
+        "name": "Archive via Utility",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1560.002": {
+        "name": "Archive via Library",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1560.003": {
+        "name": "Archive via Custom Method",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1561.001": {
+        "name": "Disk Content Wipe",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1561.002": {
+        "name": "Disk Structure Wipe",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1562.001": {
+        "name": "Disable or Modify Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1562.004": {
+        "name": "Disable or Modify System Firewall",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1564.001": {
+        "name": "Hidden Files and Directories",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1566.001": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1566.002": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1566.003": {
+        "name": "Spearphishing via Service",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1567.002": {
+        "name": "Exfiltration to Cloud Storage",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1571": {
+        "name": "Non-Standard Port",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1573.001": {
+        "name": "Symmetric Cryptography",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1574.001": {
+        "name": "DLL",
+        "tactics": [
+          "persistence",
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      "T1574.013": {
+        "name": "KernelCallbackTable",
+        "tactics": [
+          "persistence",
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      "T1583.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.004": {
+        "name": "Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.006": {
+        "name": "Web Services",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.004": {
+        "name": "Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585.001": {
+        "name": "Social Media Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585.002": {
+        "name": "Email Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.001": {
+        "name": "Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.002": {
+        "name": "Code Signing Certificates",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.003": {
+        "name": "Code Signing Certificates",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.004": {
+        "name": "Digital Certificates",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1589": {
+        "name": "Gather Victim Identity Information",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1589.002": {
+        "name": "Email Addresses",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1591": {
+        "name": "Gather Victim Org Information",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1591.004": {
+        "name": "Identify Roles",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1593.001": {
+        "name": "Social Media",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1608.001": {
+        "name": "Upload Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1608.002": {
+        "name": "Upload Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1614.001": {
+        "name": "System Language Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1620": {
+        "name": "Reflective Code Loading",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1622": {
+        "name": "Debugger Evasion",
+        "tactics": [
+          "defense-evasion",
+          "discovery"
+        ]
+      },
+      "T1656": {
+        "name": "Impersonation",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1680": {
+        "name": "Local Storage Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      }
+    },
+    "software_count": 28,
+    "software": [
+      {
+        "id": "S0364",
+        "name": "RawDisk",
+        "type": "tool"
+      },
+      {
+        "id": "S0108",
+        "name": "netsh",
+        "type": "tool"
+      },
+      {
+        "id": "S0103",
+        "name": "route",
+        "type": "tool"
+      },
+      {
+        "id": "S0174",
+        "name": "Responder",
+        "type": "tool"
+      },
+      {
+        "id": "S0238",
+        "name": "Proxysvc",
+        "type": "malware"
+      },
+      {
+        "id": "S0245",
+        "name": "BADCALL",
+        "type": "malware"
+      },
+      {
+        "id": "S0181",
+        "name": "FALLCHILL",
+        "type": "malware"
+      },
+      {
+        "id": "S0366",
+        "name": "WannaCry",
+        "type": "malware"
+      },
+      {
+        "id": "S1182",
+        "name": "MagicRAT",
+        "type": "malware"
+      },
+      {
+        "id": "S0376",
+        "name": "HOPLIGHT",
+        "type": "malware"
+      },
+      {
+        "id": "S0263",
+        "name": "TYPEFRAME",
+        "type": "malware"
+      },
+      {
+        "id": "S0567",
+        "name": "Dtrack",
+        "type": "malware"
+      },
+      {
+        "id": "S0431",
+        "name": "HotCroissant",
+        "type": "malware"
+      },
+      {
+        "id": "S0246",
+        "name": "HARDRAIN",
+        "type": "malware"
+      },
+      {
+        "id": "S0497",
+        "name": "Dacls",
+        "type": "malware"
+      },
+      {
+        "id": "S0271",
+        "name": "KEYMARBLE",
+        "type": "malware"
+      },
+      {
+        "id": "S0586",
+        "name": "TAINTEDSCRIBE",
+        "type": "malware"
+      },
+      {
+        "id": "S0347",
+        "name": "AuditCred",
+        "type": "malware"
+      },
+      {
+        "id": "S0593",
+        "name": "ECCENTRICBANDWAGON",
+        "type": "malware"
+      },
+      {
+        "id": "S0584",
+        "name": "AppleJeus",
+        "type": "malware"
+      },
+      {
+        "id": "S0520",
+        "name": "BLINDINGCAN",
+        "type": "malware"
+      },
+      {
+        "id": "S0665",
+        "name": "ThreatNeedle",
+        "type": "malware"
+      },
+      {
+        "id": "S0180",
+        "name": "Volgmer",
+        "type": "malware"
+      },
+      {
+        "id": "S0498",
+        "name": "Cryptoistic",
+        "type": "malware"
+      },
+      {
+        "id": "S0241",
+        "name": "RATANKBA",
+        "type": "malware"
+      },
+      {
+        "id": "S0239",
+        "name": "Bankshot",
+        "type": "malware"
+      },
+      {
+        "id": "S0678",
+        "name": "Torisma",
+        "type": "malware"
+      },
+      {
+        "id": "S0694",
+        "name": "DRATzarus",
+        "type": "malware"
+      }
+    ]
+  },
+  "G0034": {
+    "group_id": "G0034",
+    "name": "Sandworm Team",
+    "aliases": [
+      "Sandworm Team",
+      "ELECTRUM",
+      "Telebots",
+      "IRON VIKING",
+      "BlackEnergy (Group)",
+      "Quedagh",
+      "Voodoo Bear",
+      "IRIDIUM",
+      "Seashell Blizzard",
+      "FROZENBARENTS",
+      "APT44"
+    ],
+    "uac_designation": "UAC-0082",
+    "affiliation": "GRU Unit 74455",
+    "country": "Russia",
+    "target_sectors": [
+      "energy",
+      "government",
+      "transportation",
+      "telecom",
+      "critical_infrastructure"
+    ],
+    "target_countries": [
+      "Ukraine",
+      "global"
+    ],
+    "primary_intent": "sabotage",
+    "technique_count": 99,
+    "techniques": {
+      "T1003.001": {
+        "name": "LSASS Memory",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.003": {
+        "name": "NTDS",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1018": {
+        "name": "Remote System Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021.002": {
+        "name": "SMB/Windows Admin Shares",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1027": {
+        "name": "Obfuscated Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.002": {
+        "name": "Software Packing",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.010": {
+        "name": "Command Obfuscation",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1033": {
+        "name": "System Owner/User Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1036": {
+        "name": "Masquerading",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.004": {
+        "name": "Masquerade Task or Service",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.008": {
+        "name": "Masquerade File Type",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.010": {
+        "name": "Masquerade Account Name",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1040": {
+        "name": "Network Sniffing",
+        "tactics": [
+          "credential-access",
+          "discovery"
+        ]
+      },
+      "T1041": {
+        "name": "Exfiltration Over C2 Channel",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1047": {
+        "name": "Windows Management Instrumentation",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1049": {
+        "name": "System Network Connections Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1055": {
+        "name": "Process Injection",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1056.001": {
+        "name": "Keylogging",
+        "tactics": [
+          "collection",
+          "credential-access"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.005": {
+        "name": "Visual Basic",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1071.001": {
+        "name": "Web Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1072": {
+        "name": "Software Deployment Tools",
+        "tactics": [
+          "execution",
+          "lateral-movement"
+        ]
+      },
+      "T1078": {
+        "name": "Valid Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1078.002": {
+        "name": "Domain Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1082": {
+        "name": "System Information Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.002": {
+        "name": "Domain Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.003": {
+        "name": "Email Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1090": {
+        "name": "Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1095": {
+        "name": "Non-Application Layer Protocol",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1098": {
+        "name": "Account Manipulation",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1102.002": {
+        "name": "Bidirectional Communication",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1106": {
+        "name": "Native API",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1110": {
+        "name": "Brute Force",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1112": {
+        "name": "Modify Registry",
+        "tactics": [
+          "defense-evasion",
+          "persistence"
+        ]
+      },
+      "T1132.001": {
+        "name": "Standard Encoding",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1133": {
+        "name": "External Remote Services",
+        "tactics": [
+          "persistence",
+          "initial-access"
+        ]
+      },
+      "T1136": {
+        "name": "Create Account",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1136.002": {
+        "name": "Domain Account",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1140": {
+        "name": "Deobfuscate/Decode Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1190": {
+        "name": "Exploit Public-Facing Application",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1195": {
+        "name": "Supply Chain Compromise",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1195.002": {
+        "name": "Compromise Software Supply Chain",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1199": {
+        "name": "Trusted Relationship",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1203": {
+        "name": "Exploitation for Client Execution",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.001": {
+        "name": "Malicious Link",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.002": {
+        "name": "Malicious File",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1213.006": {
+        "name": "Databases",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1218.011": {
+        "name": "Rundll32",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1219": {
+        "name": "Remote Access Tools",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1484.001": {
+        "name": "Group Policy Modification",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1485": {
+        "name": "Data Destruction",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1486": {
+        "name": "Data Encrypted for Impact",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1489": {
+        "name": "Service Stop",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1490": {
+        "name": "Inhibit System Recovery",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1491.002": {
+        "name": "External Defacement",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1499": {
+        "name": "Endpoint Denial of Service",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1505.001": {
+        "name": "SQL Stored Procedures",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1505.003": {
+        "name": "Web Shell",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1539": {
+        "name": "Steal Web Session Cookie",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1543.002": {
+        "name": "Systemd Service",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1543.003": {
+        "name": "Windows Service",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1554": {
+        "name": "Compromise Host Software Binary",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1555.003": {
+        "name": "Credentials from Web Browsers",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1561.002": {
+        "name": "Disk Structure Wipe",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1562.001": {
+        "name": "Disable or Modify Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1562.002": {
+        "name": "Disable Windows Event Logging",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1566.001": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1566.002": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1570": {
+        "name": "Lateral Tool Transfer",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1571": {
+        "name": "Non-Standard Port",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1572": {
+        "name": "Protocol Tunneling",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1583": {
+        "name": "Acquire Infrastructure",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.004": {
+        "name": "Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.004": {
+        "name": "Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.005": {
+        "name": "Botnet",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585.001": {
+        "name": "Social Media Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585.002": {
+        "name": "Email Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1586.001": {
+        "name": "Social Media Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.001": {
+        "name": "Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.006": {
+        "name": "Vulnerabilities",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1589.002": {
+        "name": "Email Addresses",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1589.003": {
+        "name": "Employee Names",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1590.001": {
+        "name": "Domain Properties",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1591.002": {
+        "name": "Business Relationships",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1592.002": {
+        "name": "Software",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1593": {
+        "name": "Search Open Websites/Domains",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1594": {
+        "name": "Search Victim-Owned Websites",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1595.002": {
+        "name": "Vulnerability Scanning",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1598.003": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1608.001": {
+        "name": "Upload Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      }
+    },
+    "software_count": 28,
+    "software": [
+      {
+        "id": "S0002",
+        "name": "Mimikatz",
+        "type": "tool"
+      },
+      {
+        "id": "S0029",
+        "name": "PsExec",
+        "type": "tool"
+      },
+      {
+        "id": "S0195",
+        "name": "SDelete",
+        "type": "tool"
+      },
+      {
+        "id": "S0363",
+        "name": "Empire",
+        "type": "tool"
+      },
+      {
+        "id": "S0039",
+        "name": "Net",
+        "type": "tool"
+      },
+      {
+        "id": "S0378",
+        "name": "PoshC2",
+        "type": "tool"
+      },
+      {
+        "id": "S0357",
+        "name": "Impacket",
+        "type": "tool"
+      },
+      {
+        "id": "S0231",
+        "name": "Invoke-PSImage",
+        "type": "tool"
+      },
+      {
+        "id": "S0606",
+        "name": "Bad Rabbit",
+        "type": "malware"
+      },
+      {
+        "id": "S0401",
+        "name": "Exaramel for Linux",
+        "type": "malware"
+      },
+      {
+        "id": "S0343",
+        "name": "Exaramel for Windows",
+        "type": "malware"
+      },
+      {
+        "id": "S0342",
+        "name": "GreyEnergy",
+        "type": "malware"
+      },
+      {
+        "id": "S1058",
+        "name": "Prestige",
+        "type": "malware"
+      },
+      {
+        "id": "S0598",
+        "name": "P.A.S. Webshell",
+        "type": "malware"
+      },
+      {
+        "id": "S1167",
+        "name": "AcidPour",
+        "type": "malware"
+      },
+      {
+        "id": "S1010",
+        "name": "VPNFilter",
+        "type": "malware"
+      },
+      {
+        "id": "S1189",
+        "name": "Neo-reGeorg",
+        "type": "malware"
+      },
+      {
+        "id": "S0687",
+        "name": "Cyclops Blink",
+        "type": "malware"
+      },
+      {
+        "id": "S1190",
+        "name": "Kapeka",
+        "type": "malware"
+      },
+      {
+        "id": "S1125",
+        "name": "AcidRain",
+        "type": "malware"
+      },
+      {
+        "id": "S0604",
+        "name": "Industroyer",
+        "type": "malware"
+      },
+      {
+        "id": "S1072",
+        "name": "Industroyer2",
+        "type": "malware"
+      },
+      {
+        "id": "S0089",
+        "name": "BlackEnergy",
+        "type": "malware"
+      },
+      {
+        "id": "S0154",
+        "name": "Cobalt Strike",
+        "type": "malware"
+      },
+      {
+        "id": "S0368",
+        "name": "NotPetya",
+        "type": "malware"
+      },
+      {
+        "id": "S0607",
+        "name": "KillDisk",
+        "type": "malware"
+      },
+      {
+        "id": "S0365",
+        "name": "Olympic Destroyer",
+        "type": "malware"
+      },
+      {
+        "id": "S0693",
+        "name": "CaddyWiper",
+        "type": "malware"
+      }
+    ]
+  },
+  "G0010": {
+    "group_id": "G0010",
+    "name": "Turla",
+    "aliases": [
+      "Turla",
+      "IRON HUNTER",
+      "Group 88",
+      "Waterbug",
+      "WhiteBear",
+      "Snake",
+      "Krypton",
+      "Venomous Bear",
+      "Secret Blizzard",
+      "BELUGASTURGEON"
+    ],
+    "uac_designation": null,
+    "affiliation": "FSB Center 16",
+    "country": "Russia",
+    "target_sectors": [
+      "government",
+      "diplomacy",
+      "military",
+      "research"
+    ],
+    "target_countries": [
+      "EU",
+      "Middle_East",
+      "Central_Asia"
+    ],
+    "primary_intent": "espionage",
+    "technique_count": 68,
+    "techniques": {
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1007": {
+        "name": "System Service Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1012": {
+        "name": "Query Registry",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1016": {
+        "name": "System Network Configuration Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1016.001": {
+        "name": "Internet Connection Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1018": {
+        "name": "Remote System Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021.002": {
+        "name": "SMB/Windows Admin Shares",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1025": {
+        "name": "Data from Removable Media",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1027.005": {
+        "name": "Indicator Removal from Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.010": {
+        "name": "Command Obfuscation",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.011": {
+        "name": "Fileless Storage",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1049": {
+        "name": "System Network Connections Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1055": {
+        "name": "Process Injection",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1055.001": {
+        "name": "Dynamic-link Library Injection",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1057": {
+        "name": "Process Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.005": {
+        "name": "Visual Basic",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.006": {
+        "name": "Python",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.007": {
+        "name": "JavaScript",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1068": {
+        "name": "Exploitation for Privilege Escalation",
+        "tactics": [
+          "privilege-escalation"
+        ]
+      },
+      "T1069.001": {
+        "name": "Local Groups",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1069.002": {
+        "name": "Domain Groups",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1071.001": {
+        "name": "Web Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1071.003": {
+        "name": "Mail Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1078.003": {
+        "name": "Local Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1082": {
+        "name": "System Information Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.001": {
+        "name": "Local Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.002": {
+        "name": "Domain Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1090": {
+        "name": "Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1090.001": {
+        "name": "Internal Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1102": {
+        "name": "Web Service",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1102.002": {
+        "name": "Bidirectional Communication",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1106": {
+        "name": "Native API",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1110": {
+        "name": "Brute Force",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1112": {
+        "name": "Modify Registry",
+        "tactics": [
+          "defense-evasion",
+          "persistence"
+        ]
+      },
+      "T1120": {
+        "name": "Peripheral Device Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1124": {
+        "name": "System Time Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1134.002": {
+        "name": "Create Process with Token",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1140": {
+        "name": "Deobfuscate/Decode Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1189": {
+        "name": "Drive-by Compromise",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1201": {
+        "name": "Password Policy Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1204.001": {
+        "name": "Malicious Link",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1213.006": {
+        "name": "Databases",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1518.001": {
+        "name": "Security Software Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1546.003": {
+        "name": "Windows Management Instrumentation Event Subscription",
+        "tactics": [
+          "privilege-escalation",
+          "persistence"
+        ]
+      },
+      "T1546.013": {
+        "name": "PowerShell Profile",
+        "tactics": [
+          "privilege-escalation",
+          "persistence"
+        ]
+      },
+      "T1547.001": {
+        "name": "Registry Run Keys / Startup Folder",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1547.004": {
+        "name": "Winlogon Helper DLL",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1553.006": {
+        "name": "Code Signing Policy Modification",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1555.004": {
+        "name": "Windows Credential Manager",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1560.001": {
+        "name": "Archive via Utility",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1562.001": {
+        "name": "Disable or Modify Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1564.012": {
+        "name": "File/Path Exclusions",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1566.002": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1567.002": {
+        "name": "Exfiltration to Cloud Storage",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1570": {
+        "name": "Lateral Tool Transfer",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1583.006": {
+        "name": "Web Services",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.003": {
+        "name": "Virtual Private Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.004": {
+        "name": "Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.006": {
+        "name": "Web Services",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.001": {
+        "name": "Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.001": {
+        "name": "Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1615": {
+        "name": "Group Policy Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      }
+    },
+    "software_count": 30,
+    "software": [
+      {
+        "id": "S0029",
+        "name": "PsExec",
+        "type": "tool"
+      },
+      {
+        "id": "S0102",
+        "name": "nbtstat",
+        "type": "tool"
+      },
+      {
+        "id": "S0104",
+        "name": "netstat",
+        "type": "tool"
+      },
+      {
+        "id": "S0160",
+        "name": "certutil",
+        "type": "tool"
+      },
+      {
+        "id": "S0363",
+        "name": "Empire",
+        "type": "tool"
+      },
+      {
+        "id": "S0581",
+        "name": "IronNetInjector",
+        "type": "tool"
+      },
+      {
+        "id": "S0099",
+        "name": "Arp",
+        "type": "tool"
+      },
+      {
+        "id": "S0096",
+        "name": "Systeminfo",
+        "type": "tool"
+      },
+      {
+        "id": "S0002",
+        "name": "Mimikatz",
+        "type": "tool"
+      },
+      {
+        "id": "S0057",
+        "name": "Tasklist",
+        "type": "tool"
+      },
+      {
+        "id": "S0039",
+        "name": "Net",
+        "type": "tool"
+      },
+      {
+        "id": "S0075",
+        "name": "Reg",
+        "type": "tool"
+      },
+      {
+        "id": "S0590",
+        "name": "NBTscan",
+        "type": "tool"
+      },
+      {
+        "id": "S0126",
+        "name": "ComRAT",
+        "type": "malware"
+      },
+      {
+        "id": "S0256",
+        "name": "Mosquito",
+        "type": "malware"
+      },
+      {
+        "id": "S1075",
+        "name": "KOPILUWAK",
+        "type": "malware"
+      },
+      {
+        "id": "S1141",
+        "name": "LunarWeb",
+        "type": "malware"
+      },
+      {
+        "id": "S0538",
+        "name": "Crutch",
+        "type": "malware"
+      },
+      {
+        "id": "S0022",
+        "name": "Uroburos",
+        "type": "malware"
+      },
+      {
+        "id": "S0393",
+        "name": "PowerStallion",
+        "type": "malware"
+      },
+      {
+        "id": "S0168",
+        "name": "Gazer",
+        "type": "malware"
+      },
+      {
+        "id": "S0265",
+        "name": "Kazuar",
+        "type": "malware"
+      },
+      {
+        "id": "S0395",
+        "name": "LightNeuron",
+        "type": "malware"
+      },
+      {
+        "id": "S0335",
+        "name": "Carbon",
+        "type": "malware"
+      },
+      {
+        "id": "S1142",
+        "name": "LunarMail",
+        "type": "malware"
+      },
+      {
+        "id": "S0537",
+        "name": "HyperStack",
+        "type": "malware"
+      },
+      {
+        "id": "S0091",
+        "name": "Epic",
+        "type": "malware"
+      },
+      {
+        "id": "S0668",
+        "name": "TinyTurla",
+        "type": "malware"
+      },
+      {
+        "id": "S0587",
+        "name": "Penquin",
+        "type": "malware"
+      },
+      {
+        "id": "S1143",
+        "name": "LunarLoader",
+        "type": "malware"
+      }
+    ]
+  },
+  "G1003": {
+    "group_id": "G1003",
+    "name": "Ember Bear",
+    "aliases": [
+      "Ember Bear",
+      "UNC2589",
+      "Bleeding Bear",
+      "DEV-0586",
+      "Cadet Blizzard",
+      "Frozenvista",
+      "UAC-0056"
+    ],
+    "uac_designation": "UAC-0056",
+    "affiliation": "GRU",
+    "country": "Russia",
+    "target_sectors": [
+      "government",
+      "IT",
+      "telecom"
+    ],
+    "target_countries": [
+      "Ukraine",
+      "Georgia",
+      "NATO"
+    ],
+    "primary_intent": "sabotage",
+    "technique_count": 48,
+    "techniques": {
+      "T1003": {
+        "name": "OS Credential Dumping",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.001": {
+        "name": "LSASS Memory",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.002": {
+        "name": "Security Account Manager",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.004": {
+        "name": "LSA Secrets",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1018": {
+        "name": "Remote System Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021": {
+        "name": "Remote Services",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1036": {
+        "name": "Masquerading",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1046": {
+        "name": "Network Service Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1047": {
+        "name": "Windows Management Instrumentation",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1071.004": {
+        "name": "DNS",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1078.001": {
+        "name": "Default Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1090.003": {
+        "name": "Multi-hop Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1095": {
+        "name": "Non-Application Layer Protocol",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1110": {
+        "name": "Brute Force",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1110.003": {
+        "name": "Password Spraying",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1112": {
+        "name": "Modify Registry",
+        "tactics": [
+          "defense-evasion",
+          "persistence"
+        ]
+      },
+      "T1114": {
+        "name": "Email Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1119": {
+        "name": "Automated Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1125": {
+        "name": "Video Capture",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1133": {
+        "name": "External Remote Services",
+        "tactics": [
+          "persistence",
+          "initial-access"
+        ]
+      },
+      "T1190": {
+        "name": "Exploit Public-Facing Application",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1195": {
+        "name": "Supply Chain Compromise",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1203": {
+        "name": "Exploitation for Client Execution",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1210": {
+        "name": "Exploitation of Remote Services",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1491.002": {
+        "name": "External Defacement",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1505.003": {
+        "name": "Web Shell",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1550.002": {
+        "name": "Pass the Hash",
+        "tactics": [
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      "T1552.001": {
+        "name": "Credentials In Files",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1560": {
+        "name": "Archive Collected Data",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1561.002": {
+        "name": "Disk Structure Wipe",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1562.001": {
+        "name": "Disable or Modify Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1567.002": {
+        "name": "Exfiltration to Cloud Storage",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1570": {
+        "name": "Lateral Tool Transfer",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1571": {
+        "name": "Non-Standard Port",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1572": {
+        "name": "Protocol Tunneling",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1583": {
+        "name": "Acquire Infrastructure",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.003": {
+        "name": "Virtual Private Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585": {
+        "name": "Establish Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.001": {
+        "name": "Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.005": {
+        "name": "Exploits",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1595.001": {
+        "name": "Scanning IP Blocks",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1595.002": {
+        "name": "Vulnerability Scanning",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1654": {
+        "name": "Log Enumeration",
+        "tactics": [
+          "discovery"
+        ]
+      }
+    },
+    "software_count": 11,
+    "software": [
+      {
+        "id": "S0488",
+        "name": "CrackMapExec",
+        "type": "tool"
+      },
+      {
+        "id": "S0174",
+        "name": "Responder",
+        "type": "tool"
+      },
+      {
+        "id": "S0508",
+        "name": "ngrok",
+        "type": "tool"
+      },
+      {
+        "id": "S0029",
+        "name": "PsExec",
+        "type": "tool"
+      },
+      {
+        "id": "S1040",
+        "name": "Rclone",
+        "type": "tool"
+      },
+      {
+        "id": "S0521",
+        "name": "BloodHound",
+        "type": "tool"
+      },
+      {
+        "id": "S0357",
+        "name": "Impacket",
+        "type": "tool"
+      },
+      {
+        "id": "S0598",
+        "name": "P.A.S. Webshell",
+        "type": "malware"
+      },
+      {
+        "id": "S1187",
+        "name": "reGeorg",
+        "type": "malware"
+      },
+      {
+        "id": "S0689",
+        "name": "WhisperGate",
+        "type": "malware"
+      },
+      {
+        "id": "S1018",
+        "name": "Saint Bot",
+        "type": "malware"
+      }
+    ]
+  },
+  "G0007": {
+    "group_id": "G0007",
+    "name": "APT28",
+    "aliases": [
+      "APT28",
+      "IRON TWILIGHT",
+      "SNAKEMACKEREL",
+      "Swallowtail",
+      "Group 74",
+      "Sednit",
+      "Sofacy",
+      "Pawn Storm",
+      "Fancy Bear",
+      "STRONTIUM",
+      "Tsar Team",
+      "Threat Group-4127",
+      "TG-4127",
+      "Forest Blizzard",
+      "FROZENLAKE",
+      "GruesomeLarch"
+    ],
+    "uac_designation": "UAC-0001",
+    "affiliation": "GRU Unit 26165",
+    "country": "Russia",
+    "target_sectors": [
+      "government",
+      "military",
+      "defense",
+      "diplomacy",
+      "media",
+      "elections"
+    ],
+    "target_countries": [
+      "Ukraine",
+      "NATO",
+      "EU",
+      "USA"
+    ],
+    "primary_intent": "espionage",
+    "technique_count": 99,
+    "techniques": {
+      "T1001.001": {
+        "name": "Junk Data",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1003": {
+        "name": "OS Credential Dumping",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.001": {
+        "name": "LSASS Memory",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.002": {
+        "name": "Security Account Manager",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.003": {
+        "name": "NTDS",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1006": {
+        "name": "Direct Volume Access",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1014": {
+        "name": "Rootkit",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1016.002": {
+        "name": "Wi-Fi Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021.001": {
+        "name": "Remote Desktop Protocol",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.002": {
+        "name": "SMB/Windows Admin Shares",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1025": {
+        "name": "Data from Removable Media",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1027.013": {
+        "name": "Encrypted/Encoded File",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1030": {
+        "name": "Data Transfer Size Limits",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1036": {
+        "name": "Masquerading",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1037.001": {
+        "name": "Logon Script (Windows)",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1039": {
+        "name": "Data from Network Shared Drive",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1040": {
+        "name": "Network Sniffing",
+        "tactics": [
+          "credential-access",
+          "discovery"
+        ]
+      },
+      "T1048.002": {
+        "name": "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1056.001": {
+        "name": "Keylogging",
+        "tactics": [
+          "collection",
+          "credential-access"
+        ]
+      },
+      "T1057": {
+        "name": "Process Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1068": {
+        "name": "Exploitation for Privilege Escalation",
+        "tactics": [
+          "privilege-escalation"
+        ]
+      },
+      "T1070.001": {
+        "name": "Clear Windows Event Logs",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.006": {
+        "name": "Timestomp",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1071.001": {
+        "name": "Web Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1071.003": {
+        "name": "Mail Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1074.001": {
+        "name": "Local Data Staging",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1074.002": {
+        "name": "Remote Data Staging",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1078": {
+        "name": "Valid Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1078.004": {
+        "name": "Cloud Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1090.001": {
+        "name": "Internal Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1090.002": {
+        "name": "External Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1090.003": {
+        "name": "Multi-hop Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1091": {
+        "name": "Replication Through Removable Media",
+        "tactics": [
+          "lateral-movement",
+          "initial-access"
+        ]
+      },
+      "T1092": {
+        "name": "Communication Through Removable Media",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1098.002": {
+        "name": "Additional Email Delegate Permissions",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1102.002": {
+        "name": "Bidirectional Communication",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1110": {
+        "name": "Brute Force",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1110.001": {
+        "name": "Password Guessing",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1110.003": {
+        "name": "Password Spraying",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1113": {
+        "name": "Screen Capture",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1114.002": {
+        "name": "Remote Email Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1119": {
+        "name": "Automated Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1120": {
+        "name": "Peripheral Device Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1133": {
+        "name": "External Remote Services",
+        "tactics": [
+          "persistence",
+          "initial-access"
+        ]
+      },
+      "T1134.001": {
+        "name": "Token Impersonation/Theft",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1137.002": {
+        "name": "Office Test",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1140": {
+        "name": "Deobfuscate/Decode Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1189": {
+        "name": "Drive-by Compromise",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1190": {
+        "name": "Exploit Public-Facing Application",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1199": {
+        "name": "Trusted Relationship",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1203": {
+        "name": "Exploitation for Client Execution",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.001": {
+        "name": "Malicious Link",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.002": {
+        "name": "Malicious File",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1210": {
+        "name": "Exploitation of Remote Services",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1211": {
+        "name": "Exploitation for Defense Evasion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1213": {
+        "name": "Data from Information Repositories",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1213.002": {
+        "name": "Sharepoint",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1218.011": {
+        "name": "Rundll32",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1221": {
+        "name": "Template Injection",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1498": {
+        "name": "Network Denial of Service",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1505.003": {
+        "name": "Web Shell",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1528": {
+        "name": "Steal Application Access Token",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1542.003": {
+        "name": "Bootkit",
+        "tactics": [
+          "persistence",
+          "defense-evasion"
+        ]
+      },
+      "T1546.015": {
+        "name": "Component Object Model Hijacking",
+        "tactics": [
+          "privilege-escalation",
+          "persistence"
+        ]
+      },
+      "T1547.001": {
+        "name": "Registry Run Keys / Startup Folder",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1550.001": {
+        "name": "Application Access Token",
+        "tactics": [
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      "T1550.002": {
+        "name": "Pass the Hash",
+        "tactics": [
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      "T1557.004": {
+        "name": "Evil Twin",
+        "tactics": [
+          "credential-access",
+          "collection"
+        ]
+      },
+      "T1559.002": {
+        "name": "Dynamic Data Exchange",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1560": {
+        "name": "Archive Collected Data",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1560.001": {
+        "name": "Archive via Utility",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1561.001": {
+        "name": "Disk Content Wipe",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1562.004": {
+        "name": "Disable or Modify System Firewall",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1564.001": {
+        "name": "Hidden Files and Directories",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1564.003": {
+        "name": "Hidden Window",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1566.001": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1567": {
+        "name": "Exfiltration Over Web Service",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1573.001": {
+        "name": "Symmetric Cryptography",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1583.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.003": {
+        "name": "Virtual Private Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.006": {
+        "name": "Web Services",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584": {
+        "name": "Compromise Infrastructure",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.008": {
+        "name": "Network Devices",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1586.002": {
+        "name": "Email Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1589.001": {
+        "name": "Credentials",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1591": {
+        "name": "Gather Victim Org Information",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1595.002": {
+        "name": "Vulnerability Scanning",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1596": {
+        "name": "Search Open Technical Databases",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1598": {
+        "name": "Phishing for Information",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1598.003": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1669": {
+        "name": "Wi-Fi Networks",
+        "tactics": [
+          "initial-access"
+        ]
+      }
+    },
+    "software_count": 29,
+    "software": [
+      {
+        "id": "S0645",
+        "name": "Wevtutil",
+        "type": "tool"
+      },
+      {
+        "id": "S0160",
+        "name": "certutil",
+        "type": "tool"
+      },
+      {
+        "id": "S0039",
+        "name": "Net",
+        "type": "tool"
+      },
+      {
+        "id": "S0193",
+        "name": "Forfiles",
+        "type": "tool"
+      },
+      {
+        "id": "S0002",
+        "name": "Mimikatz",
+        "type": "tool"
+      },
+      {
+        "id": "S0250",
+        "name": "Koadic",
+        "type": "tool"
+      },
+      {
+        "id": "S0191",
+        "name": "Winexe",
+        "type": "tool"
+      },
+      {
+        "id": "S0174",
+        "name": "Responder",
+        "type": "tool"
+      },
+      {
+        "id": "S1205",
+        "name": "cipher.exe",
+        "type": "tool"
+      },
+      {
+        "id": "S0183",
+        "name": "Tor",
+        "type": "tool"
+      },
+      {
+        "id": "S0023",
+        "name": "CHOPSTICK",
+        "type": "malware"
+      },
+      {
+        "id": "S0243",
+        "name": "DealersChoice",
+        "type": "malware"
+      },
+      {
+        "id": "S0045",
+        "name": "ADVSTORESHELL",
+        "type": "malware"
+      },
+      {
+        "id": "S0351",
+        "name": "Cannon",
+        "type": "malware"
+      },
+      {
+        "id": "S0162",
+        "name": "Komplex",
+        "type": "malware"
+      },
+      {
+        "id": "S0135",
+        "name": "HIDEDRV",
+        "type": "malware"
+      },
+      {
+        "id": "S0044",
+        "name": "JHUHUGIT",
+        "type": "malware"
+      },
+      {
+        "id": "S0117",
+        "name": "XTunnel",
+        "type": "malware"
+      },
+      {
+        "id": "S0502",
+        "name": "Drovorub",
+        "type": "malware"
+      },
+      {
+        "id": "S0137",
+        "name": "CORESHELL",
+        "type": "malware"
+      },
+      {
+        "id": "S0138",
+        "name": "OLDBAIT",
+        "type": "malware"
+      },
+      {
+        "id": "S0134",
+        "name": "Downdelph",
+        "type": "malware"
+      },
+      {
+        "id": "S0161",
+        "name": "XAgentOSX",
+        "type": "malware"
+      },
+      {
+        "id": "S0136",
+        "name": "USBStealer",
+        "type": "malware"
+      },
+      {
+        "id": "S0251",
+        "name": "Zebrocy",
+        "type": "malware"
+      },
+      {
+        "id": "S1187",
+        "name": "reGeorg",
+        "type": "malware"
+      },
+      {
+        "id": "S0410",
+        "name": "Fysbis",
+        "type": "malware"
+      },
+      {
+        "id": "S0397",
+        "name": "LoJax",
+        "type": "malware"
+      },
+      {
+        "id": "S0108",
+        "name": "netsh",
+        "type": "tool"
+      }
+    ]
+  },
+  "G0016": {
+    "group_id": "G0016",
+    "name": "APT29",
+    "aliases": [
+      "APT29",
+      "IRON RITUAL",
+      "IRON HEMLOCK",
+      "NobleBaron",
+      "Dark Halo",
+      "NOBELIUM",
+      "UNC2452",
+      "YTTRIUM",
+      "The Dukes",
+      "Cozy Bear",
+      "CozyDuke",
+      "SolarStorm",
+      "Blue Kitsune",
+      "UNC3524",
+      "Midnight Blizzard"
+    ],
+    "uac_designation": null,
+    "affiliation": "SVR",
+    "country": "Russia",
+    "target_sectors": [
+      "government",
+      "diplomacy",
+      "technology",
+      "think_tanks"
+    ],
+    "target_countries": [
+      "USA",
+      "EU",
+      "NATO"
+    ],
+    "primary_intent": "espionage",
+    "technique_count": 119,
+    "techniques": {
+      "T1001.002": {
+        "name": "Steganography",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1003.002": {
+        "name": "Security Account Manager",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.004": {
+        "name": "LSA Secrets",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1003.006": {
+        "name": "DCSync",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1016.001": {
+        "name": "Internet Connection Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1018": {
+        "name": "Remote System Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021.001": {
+        "name": "Remote Desktop Protocol",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.002": {
+        "name": "SMB/Windows Admin Shares",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.006": {
+        "name": "Windows Remote Management",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.007": {
+        "name": "Cloud Services",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1027.001": {
+        "name": "Binary Padding",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.002": {
+        "name": "Software Packing",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.003": {
+        "name": "Steganography",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.006": {
+        "name": "HTML Smuggling",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.004": {
+        "name": "Masquerade Task or Service",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1037": {
+        "name": "Boot or Logon Initialization Scripts",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1037.004": {
+        "name": "RC Scripts",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1047": {
+        "name": "Windows Management Instrumentation",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1048.002": {
+        "name": "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1057": {
+        "name": "Process Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.005": {
+        "name": "Visual Basic",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.006": {
+        "name": "Python",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.009": {
+        "name": "Cloud API",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1068": {
+        "name": "Exploitation for Privilege Escalation",
+        "tactics": [
+          "privilege-escalation"
+        ]
+      },
+      "T1069": {
+        "name": "Permission Groups Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1069.002": {
+        "name": "Domain Groups",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1070": {
+        "name": "Indicator Removal",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.006": {
+        "name": "Timestomp",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.008": {
+        "name": "Clear Mailbox Data",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1071.001": {
+        "name": "Web Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1074.002": {
+        "name": "Remote Data Staging",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1078": {
+        "name": "Valid Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1078.002": {
+        "name": "Domain Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1078.003": {
+        "name": "Local Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1078.004": {
+        "name": "Cloud Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087": {
+        "name": "Account Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.002": {
+        "name": "Domain Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.004": {
+        "name": "Cloud Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1090.001": {
+        "name": "Internal Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1090.002": {
+        "name": "External Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1090.003": {
+        "name": "Multi-hop Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1090.004": {
+        "name": "Domain Fronting",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1098.001": {
+        "name": "Additional Cloud Credentials",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1098.002": {
+        "name": "Additional Email Delegate Permissions",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1098.003": {
+        "name": "Additional Cloud Roles",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1098.005": {
+        "name": "Device Registration",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1102.002": {
+        "name": "Bidirectional Communication",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1110.001": {
+        "name": "Password Guessing",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1110.003": {
+        "name": "Password Spraying",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1114.002": {
+        "name": "Remote Email Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1133": {
+        "name": "External Remote Services",
+        "tactics": [
+          "persistence",
+          "initial-access"
+        ]
+      },
+      "T1136.003": {
+        "name": "Cloud Account",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1140": {
+        "name": "Deobfuscate/Decode Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1190": {
+        "name": "Exploit Public-Facing Application",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1195.002": {
+        "name": "Compromise Software Supply Chain",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1199": {
+        "name": "Trusted Relationship",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1203": {
+        "name": "Exploitation for Client Execution",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.001": {
+        "name": "Malicious Link",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.002": {
+        "name": "Malicious File",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1213": {
+        "name": "Data from Information Repositories",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1213.003": {
+        "name": "Code Repositories",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1218.005": {
+        "name": "Mshta",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1218.011": {
+        "name": "Rundll32",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1482": {
+        "name": "Domain Trust Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1484.002": {
+        "name": "Trust Modification",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1505.003": {
+        "name": "Web Shell",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1528": {
+        "name": "Steal Application Access Token",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1539": {
+        "name": "Steal Web Session Cookie",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1546.003": {
+        "name": "Windows Management Instrumentation Event Subscription",
+        "tactics": [
+          "privilege-escalation",
+          "persistence"
+        ]
+      },
+      "T1546.008": {
+        "name": "Accessibility Features",
+        "tactics": [
+          "privilege-escalation",
+          "persistence"
+        ]
+      },
+      "T1547.001": {
+        "name": "Registry Run Keys / Startup Folder",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1548.002": {
+        "name": "Bypass User Account Control",
+        "tactics": [
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      "T1550": {
+        "name": "Use Alternate Authentication Material",
+        "tactics": [
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      "T1550.001": {
+        "name": "Application Access Token",
+        "tactics": [
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      "T1550.003": {
+        "name": "Pass the Ticket",
+        "tactics": [
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      "T1550.004": {
+        "name": "Web Session Cookie",
+        "tactics": [
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      "T1552.004": {
+        "name": "Private Keys",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1553.002": {
+        "name": "Code Signing",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1553.005": {
+        "name": "Mark-of-the-Web Bypass",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1555": {
+        "name": "Credentials from Password Stores",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1555.003": {
+        "name": "Credentials from Web Browsers",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1556.007": {
+        "name": "Hybrid Identity",
+        "tactics": [
+          "credential-access",
+          "defense-evasion",
+          "persistence"
+        ]
+      },
+      "T1558.003": {
+        "name": "Kerberoasting",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1560.001": {
+        "name": "Archive via Utility",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1562.001": {
+        "name": "Disable or Modify Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1562.002": {
+        "name": "Disable Windows Event Logging",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1562.004": {
+        "name": "Disable or Modify System Firewall",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1562.008": {
+        "name": "Disable or Modify Cloud Logs",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1566.001": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1566.002": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1566.003": {
+        "name": "Spearphishing via Service",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1568": {
+        "name": "Dynamic Resolution",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1573": {
+        "name": "Encrypted Channel",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1583.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.006": {
+        "name": "Web Services",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585.001": {
+        "name": "Social Media Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1586.002": {
+        "name": "Email Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1586.003": {
+        "name": "Cloud Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.001": {
+        "name": "Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.003": {
+        "name": "Digital Certificates",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1589.001": {
+        "name": "Credentials",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1595.002": {
+        "name": "Vulnerability Scanning",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1606.001": {
+        "name": "Web Cookies",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1606.002": {
+        "name": "SAML Tokens",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1621": {
+        "name": "Multi-Factor Authentication Request Generation",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1649": {
+        "name": "Steal or Forge Authentication Certificates",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1651": {
+        "name": "Cloud Administration Command",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1665": {
+        "name": "Hide Infrastructure",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1680": {
+        "name": "Local Storage Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      }
+    },
+    "software_count": 49,
+    "software": [
+      {
+        "id": "S0684",
+        "name": "ROADTools",
+        "type": "tool"
+      },
+      {
+        "id": "S0002",
+        "name": "Mimikatz",
+        "type": "tool"
+      },
+      {
+        "id": "S0175",
+        "name": "meek",
+        "type": "tool"
+      },
+      {
+        "id": "S0057",
+        "name": "Tasklist",
+        "type": "tool"
+      },
+      {
+        "id": "S0521",
+        "name": "BloodHound",
+        "type": "tool"
+      },
+      {
+        "id": "S0195",
+        "name": "SDelete",
+        "type": "tool"
+      },
+      {
+        "id": "S0677",
+        "name": "AADInternals",
+        "type": "tool"
+      },
+      {
+        "id": "S0552",
+        "name": "AdFind",
+        "type": "tool"
+      },
+      {
+        "id": "S0029",
+        "name": "PsExec",
+        "type": "tool"
+      },
+      {
+        "id": "S0183",
+        "name": "Tor",
+        "type": "tool"
+      },
+      {
+        "id": "S0096",
+        "name": "Systeminfo",
+        "type": "tool"
+      },
+      {
+        "id": "S0100",
+        "name": "ipconfig",
+        "type": "tool"
+      },
+      {
+        "id": "S0357",
+        "name": "Impacket",
+        "type": "tool"
+      },
+      {
+        "id": "S0039",
+        "name": "Net",
+        "type": "tool"
+      },
+      {
+        "id": "S0633",
+        "name": "Sliver",
+        "type": "tool"
+      },
+      {
+        "id": "S0048",
+        "name": "PinchDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0515",
+        "name": "WellMail",
+        "type": "malware"
+      },
+      {
+        "id": "S0046",
+        "name": "CozyCar",
+        "type": "malware"
+      },
+      {
+        "id": "S0682",
+        "name": "TrailBlazer",
+        "type": "malware"
+      },
+      {
+        "id": "S0052",
+        "name": "OnionDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0512",
+        "name": "FatDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0150",
+        "name": "POSHSPY",
+        "type": "malware"
+      },
+      {
+        "id": "S0634",
+        "name": "EnvyScout",
+        "type": "malware"
+      },
+      {
+        "id": "S0516",
+        "name": "SoreFang",
+        "type": "malware"
+      },
+      {
+        "id": "S0049",
+        "name": "GeminiDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S1187",
+        "name": "reGeorg",
+        "type": "malware"
+      },
+      {
+        "id": "S0588",
+        "name": "GoldMax",
+        "type": "malware"
+      },
+      {
+        "id": "S0661",
+        "name": "FoggyWeb",
+        "type": "malware"
+      },
+      {
+        "id": "S0518",
+        "name": "PolyglotDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0051",
+        "name": "MiniDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0560",
+        "name": "TEARDROP",
+        "type": "malware"
+      },
+      {
+        "id": "S0053",
+        "name": "SeaDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0589",
+        "name": "Sibot",
+        "type": "malware"
+      },
+      {
+        "id": "S0565",
+        "name": "Raindrop",
+        "type": "malware"
+      },
+      {
+        "id": "S0511",
+        "name": "RegDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0054",
+        "name": "CloudDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0597",
+        "name": "GoldFinder",
+        "type": "malware"
+      },
+      {
+        "id": "S0637",
+        "name": "NativeZone",
+        "type": "malware"
+      },
+      {
+        "id": "S0562",
+        "name": "SUNSPOT",
+        "type": "malware"
+      },
+      {
+        "id": "S0154",
+        "name": "Cobalt Strike",
+        "type": "malware"
+      },
+      {
+        "id": "S0139",
+        "name": "PowerDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S1084",
+        "name": "QUIETEXIT",
+        "type": "malware"
+      },
+      {
+        "id": "S0037",
+        "name": "HAMMERTOSS",
+        "type": "malware"
+      },
+      {
+        "id": "S0635",
+        "name": "BoomBox",
+        "type": "malware"
+      },
+      {
+        "id": "S0050",
+        "name": "CosmicDuke",
+        "type": "malware"
+      },
+      {
+        "id": "S0559",
+        "name": "SUNBURST",
+        "type": "malware"
+      },
+      {
+        "id": "S0514",
+        "name": "WellMess",
+        "type": "malware"
+      },
+      {
+        "id": "S0636",
+        "name": "VaporRage",
+        "type": "malware"
+      },
+      {
+        "id": "S0513",
+        "name": "LiteDuke",
+        "type": "malware"
+      }
+    ]
+  },
+  "G0047": {
+    "group_id": "G0047",
+    "name": "Gamaredon Group",
+    "aliases": [
+      "Gamaredon Group",
+      "IRON TILDEN",
+      "Primitive Bear",
+      "ACTINIUM",
+      "Armageddon",
+      "Shuckworm",
+      "DEV-0157",
+      "Aqua Blizzard"
+    ],
+    "uac_designation": "UAC-0010",
+    "affiliation": "FSB Center 18",
+    "country": "Russia",
+    "target_sectors": [
+      "government",
+      "military",
+      "diplomacy",
+      "judiciary",
+      "law_enforcement"
+    ],
+    "target_countries": [
+      "Ukraine"
+    ],
+    "primary_intent": "espionage",
+    "technique_count": 70,
+    "techniques": {
+      "T1001": {
+        "name": "Data Obfuscation",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1012": {
+        "name": "Query Registry",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1016.001": {
+        "name": "Internet Connection Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1020": {
+        "name": "Automated Exfiltration",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1021.005": {
+        "name": "VNC",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1025": {
+        "name": "Data from Removable Media",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1027": {
+        "name": "Obfuscated Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.004": {
+        "name": "Compile After Delivery",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.010": {
+        "name": "Command Obfuscation",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.012": {
+        "name": "LNK Icon Smuggling",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.015": {
+        "name": "Compression",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.016": {
+        "name": "Junk Code Insertion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1033": {
+        "name": "System Owner/User Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1039": {
+        "name": "Data from Network Shared Drive",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1041": {
+        "name": "Exfiltration Over C2 Channel",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1047": {
+        "name": "Windows Management Instrumentation",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1055": {
+        "name": "Process Injection",
+        "tactics": [
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      "T1057": {
+        "name": "Process Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.005": {
+        "name": "Visual Basic",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1071.001": {
+        "name": "Web Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1080": {
+        "name": "Taint Shared Content",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1082": {
+        "name": "System Information Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1090": {
+        "name": "Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1090.003": {
+        "name": "Multi-hop Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1091": {
+        "name": "Replication Through Removable Media",
+        "tactics": [
+          "lateral-movement",
+          "initial-access"
+        ]
+      },
+      "T1095": {
+        "name": "Non-Application Layer Protocol",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1102": {
+        "name": "Web Service",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1102.002": {
+        "name": "Bidirectional Communication",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1102.003": {
+        "name": "One-Way Communication",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1106": {
+        "name": "Native API",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1112": {
+        "name": "Modify Registry",
+        "tactics": [
+          "defense-evasion",
+          "persistence"
+        ]
+      },
+      "T1113": {
+        "name": "Screen Capture",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1119": {
+        "name": "Automated Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1120": {
+        "name": "Peripheral Device Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1137": {
+        "name": "Office Application Startup",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1140": {
+        "name": "Deobfuscate/Decode Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1204.001": {
+        "name": "Malicious Link",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.002": {
+        "name": "Malicious File",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1218.005": {
+        "name": "Mshta",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1218.011": {
+        "name": "Rundll32",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1221": {
+        "name": "Template Injection",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1480": {
+        "name": "Execution Guardrails",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1491.001": {
+        "name": "Internal Defacement",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1497.001": {
+        "name": "System Checks",
+        "tactics": [
+          "defense-evasion",
+          "discovery"
+        ]
+      },
+      "T1518.001": {
+        "name": "Security Software Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1534": {
+        "name": "Internal Spearphishing",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1547.001": {
+        "name": "Registry Run Keys / Startup Folder",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1559.001": {
+        "name": "Component Object Model",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1561.001": {
+        "name": "Disk Content Wipe",
+        "tactics": [
+          "impact"
+        ]
+      },
+      "T1562.001": {
+        "name": "Disable or Modify Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1564.003": {
+        "name": "Hidden Window",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1566.001": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1568": {
+        "name": "Dynamic Resolution",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1568.001": {
+        "name": "Fast Flux DNS",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1571": {
+        "name": "Non-Standard Port",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1583.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.003": {
+        "name": "Virtual Private Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.006": {
+        "name": "Web Services",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.003": {
+        "name": "Digital Certificates",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1608.001": {
+        "name": "Upload Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1620": {
+        "name": "Reflective Code Loading",
+        "tactics": [
+          "defense-evasion"
+        ]
+      }
+    },
+    "software_count": 6,
+    "software": [
+      {
+        "id": "S0332",
+        "name": "Remcos",
+        "type": "tool"
+      },
+      {
+        "id": "S0097",
+        "name": "Ping",
+        "type": "tool"
+      },
+      {
+        "id": "S0075",
+        "name": "Reg",
+        "type": "tool"
+      },
+      {
+        "id": "S0686",
+        "name": "QuietSieve",
+        "type": "malware"
+      },
+      {
+        "id": "S0147",
+        "name": "Pteranodon",
+        "type": "malware"
+      },
+      {
+        "id": "S0685",
+        "name": "PowerPunch",
+        "type": "malware"
+      }
+    ]
+  },
+  "G0022": {
+    "group_id": "G0022",
+    "name": "APT3",
+    "aliases": [
+      "APT3",
+      "Gothic Panda",
+      "Pirpi",
+      "UPS Team",
+      "Buckeye",
+      "Threat Group-0110",
+      "TG-0110"
+    ],
+    "uac_designation": null,
+    "affiliation": "MSS",
+    "country": "China",
+    "target_sectors": [
+      "technology",
+      "defense",
+      "aerospace"
+    ],
+    "target_countries": [
+      "USA",
+      "EU"
+    ],
+    "primary_intent": "espionage",
+    "technique_count": 44,
+    "techniques": {
+      "T1003.001": {
+        "name": "LSASS Memory",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1005": {
+        "name": "Data from Local System",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1016": {
+        "name": "System Network Configuration Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1018": {
+        "name": "Remote System Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1021.001": {
+        "name": "Remote Desktop Protocol",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.002": {
+        "name": "SMB/Windows Admin Shares",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1027": {
+        "name": "Obfuscated Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.002": {
+        "name": "Software Packing",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1027.005": {
+        "name": "Indicator Removal from Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1033": {
+        "name": "System Owner/User Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1036.010": {
+        "name": "Masquerade Account Name",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1041": {
+        "name": "Exfiltration Over C2 Channel",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1049": {
+        "name": "System Network Connections Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1056.001": {
+        "name": "Keylogging",
+        "tactics": [
+          "collection",
+          "credential-access"
+        ]
+      },
+      "T1057": {
+        "name": "Process Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1069": {
+        "name": "Permission Groups Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1074.001": {
+        "name": "Local Data Staging",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1078.002": {
+        "name": "Domain Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1082": {
+        "name": "System Information Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1087.001": {
+        "name": "Local Account",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1090.002": {
+        "name": "External Proxy",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1095": {
+        "name": "Non-Application Layer Protocol",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1098.007": {
+        "name": "Additional Local or Domain Groups",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1104": {
+        "name": "Multi-Stage Channels",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1110.002": {
+        "name": "Password Cracking",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1136.001": {
+        "name": "Local Account",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1203": {
+        "name": "Exploitation for Client Execution",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1204.001": {
+        "name": "Malicious Link",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1218.011": {
+        "name": "Rundll32",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1543.003": {
+        "name": "Windows Service",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1546.008": {
+        "name": "Accessibility Features",
+        "tactics": [
+          "privilege-escalation",
+          "persistence"
+        ]
+      },
+      "T1547.001": {
+        "name": "Registry Run Keys / Startup Folder",
+        "tactics": [
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1552.001": {
+        "name": "Credentials In Files",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1555.003": {
+        "name": "Credentials from Web Browsers",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1560.001": {
+        "name": "Archive via Utility",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1564.003": {
+        "name": "Hidden Window",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1566.002": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1574.001": {
+        "name": "DLL",
+        "tactics": [
+          "persistence",
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      }
+    },
+    "software_count": 6,
+    "software": [
+      {
+        "id": "S0111",
+        "name": "schtasks",
+        "type": "tool"
+      },
+      {
+        "id": "S0349",
+        "name": "LaZagne",
+        "type": "tool"
+      },
+      {
+        "id": "S0165",
+        "name": "OSInfo",
+        "type": "malware"
+      },
+      {
+        "id": "S0013",
+        "name": "PlugX",
+        "type": "malware"
+      },
+      {
+        "id": "S0063",
+        "name": "SHOTPUT",
+        "type": "malware"
+      },
+      {
+        "id": "S0166",
+        "name": "RemoteCMD",
+        "type": "malware"
+      }
+    ]
+  },
+  "G1035": {
+    "group_id": "G1035",
+    "name": "Winter Vivern",
+    "aliases": [
+      "Winter Vivern",
+      "TA473",
+      "UAC-0114"
+    ],
+    "uac_designation": "UAC-0114",
+    "affiliation": "Belarus/Russia linked",
+    "country": "Belarus",
+    "target_sectors": [
+      "government",
+      "diplomacy",
+      "military"
+    ],
+    "target_countries": [
+      "Ukraine",
+      "EU",
+      "Central_Asia"
+    ],
+    "primary_intent": "espionage",
+    "technique_count": 27,
+    "techniques": {
+      "T1020": {
+        "name": "Automated Exfiltration",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1033": {
+        "name": "System Owner/User Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1036": {
+        "name": "Masquerading",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.004": {
+        "name": "Masquerade Task or Service",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1041": {
+        "name": "Exfiltration Over C2 Channel",
+        "tactics": [
+          "exfiltration"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1056.003": {
+        "name": "Web Portal Capture",
+        "tactics": [
+          "collection",
+          "credential-access"
+        ]
+      },
+      "T1059": {
+        "name": "Command and Scripting Interpreter",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.003": {
+        "name": "Windows Command Shell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1059.007": {
+        "name": "JavaScript",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1071.001": {
+        "name": "Web Protocols",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1082": {
+        "name": "System Information Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1083": {
+        "name": "File and Directory Discovery",
+        "tactics": [
+          "discovery"
+        ]
+      },
+      "T1105": {
+        "name": "Ingress Tool Transfer",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1113": {
+        "name": "Screen Capture",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1114.001": {
+        "name": "Local Email Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1119": {
+        "name": "Automated Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1140": {
+        "name": "Deobfuscate/Decode Files or Information",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1189": {
+        "name": "Drive-by Compromise",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1190": {
+        "name": "Exploit Public-Facing Application",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1204.001": {
+        "name": "Malicious Link",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1566.001": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1583.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.003": {
+        "name": "Virtual Private Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1584.006": {
+        "name": "Web Services",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1595.002": {
+        "name": "Vulnerability Scanning",
+        "tactics": [
+          "reconnaissance"
+        ]
+      }
+    },
+    "software_count": 0,
+    "software": []
+  },
+  "G0088": {
+    "group_id": "G0088",
+    "name": "TEMP.Veles",
+    "aliases": [
+      "TEMP.Veles",
+      "XENOTIME"
+    ],
+    "uac_designation": null,
+    "affiliation": "GRU/CNIIHM",
+    "country": "Russia",
+    "target_sectors": [
+      "energy",
+      "industrial_control_systems"
+    ],
+    "target_countries": [
+      "Saudi_Arabia",
+      "USA"
+    ],
+    "primary_intent": "sabotage",
+    "technique_count": 22,
+    "techniques": {
+      "T1003.001": {
+        "name": "LSASS Memory",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1021.001": {
+        "name": "Remote Desktop Protocol",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1021.004": {
+        "name": "SSH",
+        "tactics": [
+          "lateral-movement"
+        ]
+      },
+      "T1027.005": {
+        "name": "Indicator Removal from Tools",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1036.005": {
+        "name": "Match Legitimate Resource Name or Location",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1053.005": {
+        "name": "Scheduled Task",
+        "tactics": [
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      "T1056.003": {
+        "name": "Web Portal Capture",
+        "tactics": [
+          "collection",
+          "credential-access"
+        ]
+      },
+      "T1059.001": {
+        "name": "PowerShell",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1070.004": {
+        "name": "File Deletion",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1070.006": {
+        "name": "Timestomp",
+        "tactics": [
+          "defense-evasion"
+        ]
+      },
+      "T1074.001": {
+        "name": "Local Data Staging",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1078": {
+        "name": "Valid Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1133": {
+        "name": "External Remote Services",
+        "tactics": [
+          "persistence",
+          "initial-access"
+        ]
+      },
+      "T1505.003": {
+        "name": "Web Shell",
+        "tactics": [
+          "persistence"
+        ]
+      },
+      "T1546.012": {
+        "name": "Image File Execution Options Injection",
+        "tactics": [
+          "privilege-escalation",
+          "persistence"
+        ]
+      },
+      "T1571": {
+        "name": "Non-Standard Port",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1572": {
+        "name": "Protocol Tunneling",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1573": {
+        "name": "Encrypted Channel",
+        "tactics": [
+          "command-and-control"
+        ]
+      },
+      "T1583.003": {
+        "name": "Virtual Private Server",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1587.001": {
+        "name": "Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1595": {
+        "name": "Active Scanning",
+        "tactics": [
+          "reconnaissance"
+        ]
+      }
+    },
+    "software_count": 2,
+    "software": [
+      {
+        "id": "S0002",
+        "name": "Mimikatz",
+        "type": "tool"
+      },
+      {
+        "id": "S0029",
+        "name": "PsExec",
+        "type": "tool"
+      }
+    ]
+  },
+  "G1033": {
+    "group_id": "G1033",
+    "name": "Star Blizzard",
+    "aliases": [
+      "Star Blizzard",
+      "SEABORGIUM",
+      "Callisto Group",
+      "TA446",
+      "COLDRIVER"
+    ],
+    "uac_designation": null,
+    "affiliation": "FSB Center 18",
+    "country": "Russia",
+    "target_sectors": [
+      "government",
+      "academia",
+      "NGO",
+      "think_tanks",
+      "defense"
+    ],
+    "target_countries": [
+      "UK",
+      "USA",
+      "EU",
+      "Ukraine"
+    ],
+    "primary_intent": "espionage",
+    "technique_count": 19,
+    "techniques": {
+      "T1059.007": {
+        "name": "JavaScript",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1078": {
+        "name": "Valid Accounts",
+        "tactics": [
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      "T1114.002": {
+        "name": "Remote Email Collection",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1114.003": {
+        "name": "Email Forwarding Rule",
+        "tactics": [
+          "collection"
+        ]
+      },
+      "T1204.002": {
+        "name": "Malicious File",
+        "tactics": [
+          "execution"
+        ]
+      },
+      "T1539": {
+        "name": "Steal Web Session Cookie",
+        "tactics": [
+          "credential-access"
+        ]
+      },
+      "T1550.004": {
+        "name": "Web Session Cookie",
+        "tactics": [
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      "T1566.001": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "initial-access"
+        ]
+      },
+      "T1583": {
+        "name": "Acquire Infrastructure",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1583.001": {
+        "name": "Domains",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585.001": {
+        "name": "Social Media Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1585.002": {
+        "name": "Email Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1586.002": {
+        "name": "Email Accounts",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1588.002": {
+        "name": "Tool",
+        "tactics": [
+          "resource-development"
+        ]
+      },
+      "T1589": {
+        "name": "Gather Victim Identity Information",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1593": {
+        "name": "Search Open Websites/Domains",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1598.002": {
+        "name": "Spearphishing Attachment",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1598.003": {
+        "name": "Spearphishing Link",
+        "tactics": [
+          "reconnaissance"
+        ]
+      },
+      "T1608.001": {
+        "name": "Upload Malware",
+        "tactics": [
+          "resource-development"
+        ]
+      }
+    },
+    "software_count": 1,
+    "software": [
+      {
+        "id": "S1140",
+        "name": "Spica",
+        "type": "malware"
+      }
+    ]
+  }
+}
